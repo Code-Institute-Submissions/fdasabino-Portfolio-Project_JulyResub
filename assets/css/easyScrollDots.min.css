@@ -12,8 +12,8 @@
 .scroll-indicator-controller {
 	position: fixed;
 	top: 50vh;
-	transform: translate(0, -50%);
 	right: 0;
+	transform: translate(0, -50%);
 	z-index: 999;
 }
 .scroll-indicator-controller.indi-mobile > div span {
@@ -21,33 +21,34 @@
 }
 @media (min-width: 1025px) {
 	.scroll-indicator-controller {
-		right: 20px;
+		right: 5px;
 	}
 }
 .scroll-indicator-controller > div {
-	width: 8px;
-	height: 8px;
+	width: 5px;
+	height: 5px;
 	position: relative;
 	border-radius: 50%;
-	border: 1px solid #03ac6e;
-	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid #236cb0;
+	background: rgba(0, 0, 0, 0.2);
 	margin: 30px 0 10px 0;
 	cursor: pointer;
 	transition: background 0.4s ease;
 	will-change: transition;
 }
 .scroll-indicator-controller > div span {
-	color: #0b8457;
+	color: #555;
 	position: absolute;
-	right: calc(100% + 8px);
+	right: calc(100% + 10px);
 	white-space: nowrap;
 	top: 50%;
-	font-family: arial, sans-serif;
-	font-size: 16px;
+	font-family: "Questrial", sans-serif;
+	font-weight: 700;
+	font-size: 10px;
 	line-height: 17px;
-	width: 0;
+	width: 1;
 	overflow: hidden;
-	opacity: 0;
+	opacity: 1;
 	transform: translateY(-50%) translateX(10px);
 	transition: all 0.4s ease;
 	will-change: transition;
@@ -61,7 +62,7 @@
 	content: "";
 	padding-left: 5px;
 	letter-spacing: -2px;
-	font-family: arial, sans-serif;
+	font-family: "Questrial", sans-serif;
 	vertical-align: text-top;
 	line-height: 14px;
 }
@@ -74,7 +75,7 @@
 	}
 }
 .scroll-indicator-controller > div.active {
-	background: #0b8457;
+	background: #236cb0;
 	border-color: rgba(0, 0, 0, 0.25);
 	width: 10px;
 	height: 10px;

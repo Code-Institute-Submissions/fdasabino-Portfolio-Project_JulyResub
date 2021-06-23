@@ -34,7 +34,7 @@
 
 - The colours chosen for the page were mainly black and white to bring the depth and drama on the imagery, with a touch of Light vibrant green on links and buttons to bring out the contrast to the eye.
 
-### 3.2. Typhography
+### 3.2. Typography
 
 - The font I have chosen for the page is "Questrial". It was downloaded from Google Fonts. It gives the page a modern and classy look.
 

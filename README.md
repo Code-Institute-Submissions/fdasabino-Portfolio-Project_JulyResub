@@ -6,7 +6,7 @@
 
 ## 1. Project Goals
 
-- This page was designed with the purpose of attacting job opportunities. It is part of my milestone 2 (MLS 2) for my developer course at the Code Institute. The main idea with this page is to make it a hub for my future projects and work, so recruiters and potential employers can easily reach out.
+- This page was designed with the purpose of attracting job opportunities. It is part of my milestone 2 (MLS 2) for my developer course at the Code Institute. The main idea with this page is to make it a hub for my future projects and work, so recruiters and potential employers can easily reach out.
 
 [View the live project here](https://fdasabino.github.io/Portfolio-Project/)
 
@@ -36,7 +36,7 @@
 
 ### 3.2. Typhography
 
-- The font I have chosen for the page is Questrial. It was downloaded from Google Fonts. It gives the page a modern and classy look.
+- The font I have chosen for the page is "Questrial". It was downloaded from Google Fonts. It gives the page a modern and classy look.
 
 - ### 3.3. Imagery
 

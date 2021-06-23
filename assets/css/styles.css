@@ -80,7 +80,7 @@ header {
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 header a:hover {
@@ -88,7 +88,7 @@ header a:hover {
 }
 
 header.sticky {
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 0.8);
 	padding: 40px 100px;
 }
 
@@ -212,7 +212,7 @@ header.sticky ul li a {
 }
 
 .services .content .servicesBx img {
-	filter: invert(1);
+	filter: invert(0);
 }
 
 .services .content .servicesBx h2 {

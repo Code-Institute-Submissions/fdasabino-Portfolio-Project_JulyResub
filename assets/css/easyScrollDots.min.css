@@ -25,32 +25,29 @@
 	}
 }
 .scroll-indicator-controller > div {
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
 	position: relative;
 	border-radius: 50%;
-	border: 1px solid #236cb0;
-	background: rgba(14, 137, 204, 0.366);
-	margin: 30px 0 10px 0;
-	cursor: pointer;
-	transition: background 0.4s ease;
+	margin: 50px 0 10px 0;
+	transition: background 0.4s ease-in-out;
 	will-change: transition;
 }
 .scroll-indicator-controller > div span {
 	color: #555;
 	position: absolute;
-	right: calc(100% + 10px);
+	right: calc(100%);
 	white-space: nowrap;
 	top: 50%;
 	font-family: "Questrial", sans-serif;
 	font-weight: 700;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 17px;
 	width: 1;
 	overflow: hidden;
 	opacity: 1;
-	transform: translateY(-50%) translateX(10px);
-	transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.8s ease;
 	will-change: transition;
 }
 @media (hover: none) {
@@ -59,26 +56,22 @@
 	}
 }
 .scroll-indicator-controller > div span:after {
-	content: "";
-	padding-left: 5px;
+	content: " ";
+	padding-left: 3px;
 	letter-spacing: -2px;
 	font-family: "Questrial", sans-serif;
 	vertical-align: text-top;
 	line-height: 14px;
 }
 @media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.scroll-indicator-controller > div:hover span {
+	.scroll-indicator-controller > div.active span {
 		width: auto;
+		font-size: 14px;
+		color: #236cb0;
 		opacity: 1;
 		overflow: visible;
 		transform: translateY(-50%) translateX(0);
 	}
-}
-.scroll-indicator-controller > div.active {
-	background: #236cb0;
-	border-color: rgba(0, 0, 0, 0.25);
-	width: 10px;
-	height: 10px;
 }
 @supports (-ms-ime-align: auto) {
 	.scroll-indicator-controller > div span {

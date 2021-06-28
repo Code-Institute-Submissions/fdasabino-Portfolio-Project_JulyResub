@@ -1,3 +1,16 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "cSpell.ignoreWords": [
+        "emptyerror",
+        "errormail",
+        "errorname",
+        "hbodrvd",
+        "pcnbro",
+        "sendmail",
+        "service",
+        "superhands",
+        "swal",
+        "template",
+        "weirdcharerror"
+    ]
 }

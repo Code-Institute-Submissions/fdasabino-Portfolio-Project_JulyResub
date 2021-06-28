@@ -80,7 +80,7 @@ document
 					key == 9 || // tab
 					key == 13 || // enter
 					key == 20 || // caps lock
-					key == 16 || // caps lock left
+					key == 16 || // shift - left and right
 					key == 32 || // space-bar
 					key == 46 || // delete
 					key == 116 || // f5
@@ -133,6 +133,7 @@ function errorname() {
 		text: "Please fill Name Correctly ",
 	});
 }
+
 function errormail() {
 	Swal.fire({
 		icon: "error",
@@ -140,6 +141,7 @@ function errormail() {
 		text: "youremail@example.com",
 	});
 }
+
 function success() {
 	Swal.fire({
 		icon: "success",

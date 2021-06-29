@@ -167,8 +167,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - The testimonials found on the page were written by Jessica Norgren and Linda Molin, for taking the time to write about me.
 
-- Big thanks to my mentor Precious Ijege for showing me the ways, and how to improve my work.
-
 ### 8.2. Code
 
 - Shoutout to EmailJS for making possible to send messages directly from the page.
@@ -178,3 +176,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Hero and About images were created by the developer.
 
 - The PNGs were downloaded from [Freepngimg](https://freepngimg.com/).
+
+## 9. Latest Updates
+
+- Updated CSS and JS files for smoother transition effects.
+
+- Updated milestone section.
+
+- Improved menu for mobile version, which takes the entire height of the page.
+
+- Adjusted targeting of social media icon, which was causing the icon to take the entire width of the footer.

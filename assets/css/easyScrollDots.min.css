@@ -34,7 +34,7 @@
 	will-change: transition;
 }
 .scroll-indicator-controller > div span {
-	color: #555;
+	color: #777;
 	position: absolute;
 	right: calc(100%);
 	white-space: nowrap;
@@ -67,7 +67,7 @@
 	.scroll-indicator-controller > div.active span {
 		width: auto;
 		font-size: 16px;
-		color: orangered;
+		color: #236cb0;
 		opacity: 1;
 		overflow: visible;
 		transform: translateY(-50%) translateX(0);

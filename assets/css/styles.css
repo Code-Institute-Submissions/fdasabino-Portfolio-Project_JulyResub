@@ -20,7 +20,7 @@ section {
 
 .btn {
 	position: relative;
-	background: orangered;
+	background: #236cb0;
 	display: inline-block;
 	color: #fff;
 	margin-top: 1.5rem;
@@ -84,7 +84,7 @@ header {
 }
 
 header a:hover {
-	color: orangered;
+	color: #236cb0;
 }
 header.sticky {
 	background: rgba(0, 0, 0, 0.4);
@@ -92,7 +92,7 @@ header.sticky {
 }
 
 header.sticky a:hover {
-	color: orangered;
+	color: #236cb0;
 }
 
 header .logo {
@@ -221,7 +221,7 @@ header.sticky ul li a {
 
 /* work modal section */
 .js-openbtn {
-	background: orangered;
+	background: #236cb0;
 	color: white;
 }
 .js-openbtn a {
@@ -404,7 +404,7 @@ header.sticky ul li a {
 
 .formBx form input[type="submit"] {
 	max-width: 100px;
-	background: orangered;
+	background: #236cb0;
 	cursor: pointer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -461,7 +461,7 @@ header.sticky ul li a {
 
 .contactInfoBx .box .text h3 {
 	font-weight: 500;
-	color: orangered;
+	color: #236cb0;
 }
 
 .copyright {

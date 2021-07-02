@@ -98,8 +98,8 @@ function validate() {
 		});
 	}
 
-	btn.addEventListener("click", (e) => {
-		e.preventDefault();
+	btn.addEventListener("click", (event) => {
+		event.preventDefault();
 
 		//msg validation
 		if (msg.value === "" || msg.value === null) {

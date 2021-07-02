@@ -32,6 +32,15 @@ closeBtns.forEach((node) => {
 	});
 });
 
+//Sendmail function
+function sendmail(name, email, msg) {
+	emailjs.send("service_6pcnbro", "template_hbodrvd", {
+		from_name: name,
+		from_email: email,
+		message: msg,
+	});
+}
+
 // Validation function
 
 function validate() {
@@ -39,15 +48,6 @@ function validate() {
 	let email = document.getElementById("email");
 	let msg = document.getElementById("message");
 	let btn = document.querySelector(".submit");
-
-	//Sendmail function
-	function sendmail(name, email, msg) {
-		emailjs.send("service_6pcnbro", "template_hbodrvd", {
-			from_name: name,
-			from_email: email,
-			message: msg,
-		});
-	}
 
 	function emptyerror() {
 		Swal.fire({
@@ -108,8 +108,8 @@ function validate() {
 		});
 	}
 
-	btn.addEventListener("click", (e) => {
-		e.preventDefault();
+	btn.addEventListener("click", (event) => {
+		event.preventDefault();
 
 		//msg validation
 		if (msg.value === "" || msg.value === null) {
@@ -134,6 +134,7 @@ function validate() {
 			}, 7000);
 		}
 	});
+
 	// no number input for name field
 	document
 		.getElementById("username")

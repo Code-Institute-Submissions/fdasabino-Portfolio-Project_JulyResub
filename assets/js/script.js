@@ -10,6 +10,8 @@ function toggleMenu() {
 	menu.classList.toggle("active");
 }
 
+toggleMenu();
+
 // modal-box
 
 let openbtn = document.querySelector(".js-open");
@@ -38,6 +40,65 @@ function validate() {
 	let msg = document.getElementById("message");
 	let btn = document.querySelector(".submit");
 
+	function emptyerror() {
+		Swal.fire({
+			icon: "info",
+			iconColor: "#D4873D",
+			title: "No Empty Forms Allowed",
+			text: "Please fill all the Fields",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
+	function weirdcharerror() {
+		Swal.fire({
+			icon: "info",
+			iconColor: "#D4873D",
+			title: "Only Letters Allowed",
+			text: "No Numbers or Special Characters",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
+	function errorname() {
+		Swal.fire({
+			icon: "question",
+			iconColor: "#D4873D",
+			title: "Have you Filled Your Name Correctly? ",
+			text: "Please fill Name Correctly ",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
+	function errormail() {
+		Swal.fire({
+			icon: "question",
+			iconColor: "#D4873D",
+			title: "Have you Filled Your Email Correctly? ",
+			text: "youremail@example.com",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
+	function success() {
+		Swal.fire({
+			icon: "success",
+			title: "Success",
+			text: "Your Message has Been Sent",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
 	btn.addEventListener("click", (e) => {
 		e.preventDefault();
 
@@ -53,7 +114,7 @@ function validate() {
 		} else if (
 			email.value === "" ||
 			email.value === null ||
-			email.value.indexOf("@") == -1
+			email.value.indexOf("@") === -1
 		) {
 			errormail();
 		} else {
@@ -108,64 +169,5 @@ function sendmail(name, email, msg) {
 		from_name: name,
 		from_email: email,
 		message: msg,
-	});
-}
-
-function emptyerror() {
-	Swal.fire({
-		icon: "info",
-		iconColor: "#D4873D",
-		title: "No Empty Forms Allowed",
-		text: "Please fill all the Fields",
-		confirmButtonColor: "#D4873D",
-		background: "#111",
-		closeOnClickOutside: true,
-	});
-}
-
-function weirdcharerror() {
-	Swal.fire({
-		icon: "info",
-		iconColor: "#D4873D",
-		title: "Only Letters Allowed",
-		text: "No Numbers or Special Characters",
-		confirmButtonColor: "#D4873D",
-		background: "#111",
-		closeOnClickOutside: true,
-	});
-}
-
-function errorname() {
-	Swal.fire({
-		icon: "question",
-		iconColor: "#D4873D",
-		title: "Have you Filled Your Name Correctly? ",
-		text: "Please fill Name Correctly ",
-		confirmButtonColor: "#D4873D",
-		background: "#111",
-		closeOnClickOutside: true,
-	});
-}
-
-function errormail() {
-	Swal.fire({
-		icon: "question",
-		iconColor: "#D4873D",
-		title: "Have you Filled Your Email Correctly? ",
-		text: "youremail@example.com",
-		confirmButtonColor: "#D4873D",
-		background: "#111",
-		closeOnClickOutside: true,
-	});
-}
-
-function success() {
-	Swal.fire({
-		icon: "success",
-		title: "Success",
-		text: "Your Message has Been Sent",
-		confirmButtonColor: "#D4873D",
-		background: "#111",
-		closeOnClickOutside: true,
 	});
 }

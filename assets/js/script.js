@@ -10,7 +10,6 @@ function toggleMenu() {
 	menuToggle.classList.toggle("active");
 	menu.classList.toggle("active");
 }
-toggleMenu();
 
 // modal-box
 let openbtn = document.querySelector(".js-open");

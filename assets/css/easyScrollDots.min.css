@@ -12,8 +12,8 @@
 .scroll-indicator-controller {
 	position: fixed;
 	top: 50vh;
-	transform: translate(0, -50%);
 	right: 0;
+	transform: translate(0, -50%);
 	z-index: 999;
 }
 .scroll-indicator-controller.indi-mobile > div span {
@@ -21,35 +21,33 @@
 }
 @media (min-width: 1025px) {
 	.scroll-indicator-controller {
-		right: 20px;
+		right: 5px;
 	}
 }
 .scroll-indicator-controller > div {
-	width: 8px;
-	height: 8px;
+	width: 5px;
+	height: 5px;
 	position: relative;
 	border-radius: 50%;
-	border: 1px solid #03ac6e;
-	background: rgba(0, 0, 0, 0.1);
-	margin: 30px 0 10px 0;
-	cursor: pointer;
-	transition: background 0.4s ease;
+	margin: 50px 0 10px 0;
+	transition: background 0.4s ease-in-out;
 	will-change: transition;
 }
 .scroll-indicator-controller > div span {
-	color: #0b8457;
+	color: #777;
 	position: absolute;
-	right: calc(100% + 8px);
+	right: calc(100%);
 	white-space: nowrap;
 	top: 50%;
-	font-family: arial, sans-serif;
-	font-size: 16px;
+	font-family: "Questrial", sans-serif;
+	font-weight: 700;
+	font-size: 11px;
 	line-height: 17px;
-	width: 0;
+	width: 1;
 	overflow: hidden;
-	opacity: 0;
-	transform: translateY(-50%) translateX(10px);
-	transition: all 0.4s ease;
+	opacity: 1;
+	cursor: pointer;
+	transition: all 0.8s ease;
 	will-change: transition;
 }
 @media (hover: none) {
@@ -58,29 +56,25 @@
 	}
 }
 .scroll-indicator-controller > div span:after {
-	content: "";
-	padding-left: 5px;
+	content: " ";
+	padding-left: 3px;
 	letter-spacing: -2px;
-	font-family: arial, sans-serif;
+	font-family: "Questrial", sans-serif;
 	vertical-align: text-top;
 	line-height: 14px;
 }
 @media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.scroll-indicator-controller > div:hover span {
+	.scroll-indicator-controller > div.active span {
 		width: auto;
+		font-size: 16px;
+		color: #d4873d;
 		opacity: 1;
 		overflow: visible;
 		transform: translateY(-50%) translateX(0);
 	}
 }
-.scroll-indicator-controller > div.active {
-	background: #0b8457;
-	border-color: rgba(0, 0, 0, 0.25);
-	width: 10px;
-	height: 10px;
-}
 @supports (-ms-ime-align: auto) {
 	.scroll-indicator-controller > div span {
-		transition: opacity 0.4s ease;
+		transition: opacity 1s ease-in;
 	}
 }

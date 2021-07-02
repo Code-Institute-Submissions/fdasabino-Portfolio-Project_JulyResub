@@ -6,7 +6,7 @@
 
 ## 1. Project Goals
 
-- This page was designed with the purpose of attacting job opportunities. It is part of my milestone 2 (MLS 2) for my developer course at the Code Institute. The main idea with this page is to make it a hub for my future projects and work, so recruiters and potential employers can easily reach out.
+- This page was designed with the purpose of attracting job opportunities. It is part of my milestone 2 (MLS 2) for my developer course at the Code Institute. The main idea with this page is to make it a hub for my future projects and work, so recruiters and potential employers can easily reach out.
 
 [View the live project here](https://fdasabino.github.io/Portfolio-Project/)
 
@@ -34,9 +34,9 @@
 
 - The colours chosen for the page were mainly black and white to bring the depth and drama on the imagery, with a touch of Light vibrant green on links and buttons to bring out the contrast to the eye.
 
-### 3.2. Typhography
+### 3.2. Typography
 
-- The font I have chosen for the page is Questrial. It was downloaded from Google Fonts. It gives the page a modern and classy look.
+- The font I have chosen for the page is "Questrial". It was downloaded from Google Fonts. It gives the page a modern and classy look.
 
 - ### 3.3. Imagery
 
@@ -167,8 +167,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - The testimonials found on the page were written by Jessica Norgren and Linda Molin, for taking the time to write about me.
 
-- Big thanks to my mentor Precious Ijege for showing me the ways, and how to improve my work.
-
 ### 8.2. Code
 
 - Shoutout to EmailJS for making possible to send messages directly from the page.
@@ -178,3 +176,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Hero and About images were created by the developer.
 
 - The PNGs were downloaded from [Freepngimg](https://freepngimg.com/).
+
+## 9. Latest Updates
+
+- Updated CSS and JS files for smoother transition effects.
+
+- Updated milestone section.
+
+- Improved menu for mobile version, which takes the entire height of the page.
+
+- Adjusted targeting of social media icon, which was causing the icon to take the entire width of the footer.

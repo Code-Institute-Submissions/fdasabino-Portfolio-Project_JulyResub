@@ -42,12 +42,15 @@ function sendmail(name, email, msg) {
 }
 
 // Validation function
-
 function validate() {
 	let name = document.getElementById("username");
 	let email = document.getElementById("email");
 	let msg = document.getElementById("message");
 	let btn = document.querySelector(".submit");
+
+	/*
+global Swal, emailjs
+*/
 
 	function emptyerror() {
 		Swal.fire({

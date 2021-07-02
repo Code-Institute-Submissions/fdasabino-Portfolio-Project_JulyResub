@@ -1,3 +1,4 @@
+//hamburger menu
 window.addEventListener("scroll", function () {
 	let header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
@@ -9,11 +10,9 @@ function toggleMenu() {
 	menuToggle.classList.toggle("active");
 	menu.classList.toggle("active");
 }
-
 toggleMenu();
 
 // modal-box
-
 let openbtn = document.querySelector(".js-open");
 let modalBg = document.getElementById("modal-bg");
 let modalBox = document.getElementById("modal-box");
@@ -33,6 +32,10 @@ closeBtns.forEach((node) => {
 });
 
 //Sendmail function
+/*
+global emailjs
+*/
+
 function sendmail(name, email, msg) {
 	emailjs.send("service_6pcnbro", "template_hbodrvd", {
 		from_name: name,
@@ -48,8 +51,9 @@ function validate() {
 	let msg = document.getElementById("message");
 	let btn = document.querySelector(".submit");
 
+	//Sweetalert
 	/*
-global Swal, emailjs
+global Swal
 */
 
 	function emptyerror() {

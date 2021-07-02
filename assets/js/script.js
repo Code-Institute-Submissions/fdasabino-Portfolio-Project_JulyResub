@@ -40,6 +40,7 @@ function validate() {
 	let msg = document.getElementById("message");
 	let btn = document.querySelector(".submit");
 	let Swal;
+	let emailjs;
 
 	//Sendmail functions
 	function sendmail(name, email, msg) {
@@ -126,6 +127,7 @@ function validate() {
 }
 
 // no number input for name field
+let Swal;
 
 function weirdcharerror() {
 	Swal.fire({

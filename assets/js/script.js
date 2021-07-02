@@ -42,17 +42,17 @@ function validate() {
 		e.preventDefault();
 
 		//msg validation
-		if (msg.value === "" || msg.value == null) {
+		if (msg.value === "" || msg.value === null) {
 			emptyerror();
 
 			//name validation
-		} else if (name.value === "" || name.value == null) {
+		} else if (name.value === "" || name.value === null) {
 			errorname();
 
 			//email validation
 		} else if (
 			email.value === "" ||
-			email.value == null ||
+			email.value === null ||
 			email.value.indexOf("@") == -1
 		) {
 			errormail();
@@ -76,20 +76,20 @@ document
 			var key = event.keyCode;
 			if (
 				!(
-					key == 8 || // backspace
-					key == 9 || // tab
-					key == 13 || // enter
-					key == 20 || // caps lock
-					key == 16 || // shift - left and right
-					key == 32 || // space-bar
-					key == 27 || // escape
-					key == 46 || // delete
-					key == 116 || // f5
-					key == 221 || // å
-					key == 222 || // ä
-					key == 192 || // ö
-					key == 191 || // '
-					key == 189 || // -
+					key === 8 || // backspace
+					key === 9 || // tab
+					key === 13 || // enter
+					key === 20 || // caps lock
+					key === 16 || // shift - left and right
+					key === 32 || // space-bar
+					key === 27 || // escape
+					key === 46 || // delete
+					key === 116 || // f5
+					key === 221 || // å
+					key === 222 || // ä
+					key === 192 || // ö
+					key === 191 || // '
+					key === 189 || // -
 					(key >= 35 && key <= 40) ||
 					(key >= 65 && key <= 90)
 				)

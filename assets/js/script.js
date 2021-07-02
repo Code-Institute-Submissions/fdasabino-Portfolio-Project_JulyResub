@@ -61,7 +61,7 @@ function validate() {
 			success();
 			window.setTimeout(function () {
 				location.reload();
-			}, 5000);
+			}, 7000);
 		}
 	});
 }
@@ -82,6 +82,7 @@ document
 					key == 20 || // caps lock
 					key == 16 || // shift - left and right
 					key == 32 || // space-bar
+					key == 27 || // escape
 					key == 46 || // delete
 					key == 116 || // f5
 					key == 221 || // å
@@ -113,32 +114,48 @@ function sendmail(name, email, msg) {
 function emptyerror() {
 	Swal.fire({
 		icon: "info",
+		iconColor: "#D4873D",
 		title: "No Empty Forms Allowed",
 		text: "Please fill all the Fields",
+		confirmButtonColor: "#D4873D",
+		background: "#111",
+		closeOnClickOutside: true,
 	});
 }
 
 function weirdcharerror() {
 	Swal.fire({
 		icon: "info",
+		iconColor: "#D4873D",
 		title: "Only Letters Allowed",
 		text: "No Numbers or Special Characters",
+		confirmButtonColor: "#D4873D",
+		background: "#111",
+		closeOnClickOutside: true,
 	});
 }
 
 function errorname() {
 	Swal.fire({
-		icon: "error",
-		title: "Please Fill Your Name Correctly ",
+		icon: "question",
+		iconColor: "#D4873D",
+		title: "Have you Filled Your Name Correctly? ",
 		text: "Please fill Name Correctly ",
+		confirmButtonColor: "#D4873D",
+		background: "#111",
+		closeOnClickOutside: true,
 	});
 }
 
 function errormail() {
 	Swal.fire({
-		icon: "error",
-		title: "Please Fill Your Email Correctly ",
+		icon: "question",
+		iconColor: "#D4873D",
+		title: "Have you Filled Your Email Correctly? ",
 		text: "youremail@example.com",
+		confirmButtonColor: "#D4873D",
+		background: "#111",
+		closeOnClickOutside: true,
 	});
 }
 
@@ -147,5 +164,8 @@ function success() {
 		icon: "success",
 		title: "Success",
 		text: "Your Message has Been Sent",
+		confirmButtonColor: "#D4873D",
+		background: "#111",
+		closeOnClickOutside: true,
 	});
 }

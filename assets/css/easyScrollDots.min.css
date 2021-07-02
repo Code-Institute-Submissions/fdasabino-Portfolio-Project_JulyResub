@@ -67,7 +67,7 @@
 	.scroll-indicator-controller > div.active span {
 		width: auto;
 		font-size: 16px;
-		color: #236cb0;
+		color: #d4873d;
 		opacity: 1;
 		overflow: visible;
 		transform: translateY(-50%) translateX(0);

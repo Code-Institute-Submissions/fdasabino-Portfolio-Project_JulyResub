@@ -20,7 +20,7 @@ section {
 
 .btn {
 	position: relative;
-	background: #236cb0;
+	background: #d4873d;
 	display: inline-block;
 	color: #fff;
 	margin-top: 1.5rem;
@@ -84,15 +84,15 @@ header {
 }
 
 header a:hover {
-	color: #236cb0;
+	color: #d4873d;
 }
 header.sticky {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0);
 	padding: 10px 100px;
 }
 
 header.sticky a:hover {
-	color: #236cb0;
+	color: #d4873d;
 }
 
 header .logo {
@@ -221,7 +221,7 @@ header.sticky ul li a {
 
 /* work modal section */
 .js-openbtn {
-	background: #236cb0;
+	background: #d4873d;
 	color: white;
 }
 .js-openbtn a {
@@ -316,6 +316,10 @@ header.sticky ul li a {
 	background: #ccc;
 }
 
+.carousel-indicators [data-bs-target] {
+	background-color: #d4873d;
+}
+
 .testimonial .content {
 	display: flex;
 	justify-content: space-between;
@@ -326,7 +330,8 @@ header.sticky ul li a {
 	max-width: calc(80% - 50px);
 	padding: 20px 30px;
 	margin: 20px;
-	background: #333;
+	background: #111;
+	border-radius: 8px;
 }
 
 .testimonial .content .testimonialBx p {
@@ -363,12 +368,12 @@ header.sticky ul li a {
 
 .formBx {
 	min-width: 60%;
+	padding: 5rem;
 }
 
 .formBx form {
 	display: flex;
 	flex-direction: column;
-	padding: 3rem;
 }
 
 .formBx form h3,
@@ -391,11 +396,13 @@ header.sticky ul li a {
 	background: #222;
 	color: #fff;
 	text-align: center;
+	border-radius: 8px;
 }
 
 .formBx form input::placeholder,
 .formBx form textarea::placeholder {
 	color: #999;
+	font-size: 15px;
 }
 
 .formBx form textarea {
@@ -404,7 +411,7 @@ header.sticky ul li a {
 
 .formBx form input[type="submit"] {
 	max-width: 100px;
-	background: #236cb0;
+	background: #d4873d;
 	cursor: pointer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -461,7 +468,7 @@ header.sticky ul li a {
 
 .contactInfoBx .box .text h3 {
 	font-weight: 500;
-	color: #236cb0;
+	color: #d4873d;
 }
 
 .copyright {

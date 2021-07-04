@@ -1,15 +1,18 @@
-//hamburger menu
+// sticky nav bar
 window.addEventListener("scroll", function () {
 	let header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+//hamburger menu
 function toggleMenu() {
 	let menuToggle = document.querySelector(".toggle");
 	let menu = document.querySelector(".menu");
 	menuToggle.classList.toggle("active");
 	menu.classList.toggle("active");
 }
+
+toggleMenu;
 
 // modal-box
 let openbtn = document.querySelector(".js-open");

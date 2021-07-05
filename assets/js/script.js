@@ -148,23 +148,23 @@ global Swal
 	document.getElementById("username").addEventListener("keydown", (event) => {
 		if (event.ctrlKey || event.altKey);
 		else {
-			const validateName = event.keyCode;
-			8 === validateName ||
-				9 === validateName ||
-				13 === validateName ||
-				20 === validateName ||
-				16 === validateName ||
-				32 === validateName ||
-				27 === validateName ||
-				46 === validateName ||
-				116 === validateName ||
-				221 === validateName ||
-				222 === validateName ||
-				192 === validateName ||
-				191 === validateName ||
-				189 === validateName ||
-				(validateName >= 35 && validateName <= 40) ||
-				(validateName >= 65 && validateName <= 90) ||
+			const checkName = event.keyCode;
+			8 === checkName ||
+				9 === checkName ||
+				13 === checkName ||
+				20 === checkName ||
+				16 === checkName ||
+				32 === checkName ||
+				27 === checkName ||
+				46 === checkName ||
+				116 === checkName ||
+				221 === checkName ||
+				222 === checkName ||
+				192 === checkName ||
+				191 === checkName ||
+				189 === checkName ||
+				(checkName >= 35 && checkName <= 40) ||
+				(checkName >= 65 && checkName <= 90) ||
 				(event.preventDefault(), weirdcharerror());
 		}
 	});

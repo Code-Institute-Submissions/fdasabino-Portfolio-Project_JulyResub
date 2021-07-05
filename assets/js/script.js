@@ -75,7 +75,7 @@ global Swal
 			icon: "info",
 			iconColor: "#D4873D",
 			title: "Only Letters Allowed",
-			text: "No Numbers or Special Characters",
+			text: "No Numbers or Special Characters in this Field",
 			confirmButtonColor: "#D4873D",
 			background: "#111",
 			closeOnClickOutside: true,
@@ -148,33 +148,26 @@ global Swal
 	document
 		.getElementById("username")
 		.addEventListener("keydown", function (event) {
-			if (event.ctrlKey || event.altKey) {
-				event.preventDefault();
-			} else {
-				var key = event.keyCode;
-				if (
-					!(
-						key === 8 || // backspace
-						key === 9 || // tab
-						key === 13 || // enter
-						key === 20 || // caps lock
-						key === 16 || // shift - left and right
-						key === 32 || // space-bar
-						key === 27 || // escape
-						key === 46 || // delete
-						key === 116 || // f5
-						key === 221 || // å
-						key === 222 || // ä
-						key === 192 || // ö
-						key === 191 || // '
-						key === 189 || // -
-						(key >= 35 && key <= 40) ||
-						(key >= 65 && key <= 90)
-					)
-				) {
-					event.preventDefault();
-					weirdcharerror();
-				}
+			if (event.ctrlKey || event.altKey);
+			else {
+				var validateName = event.keyCode;
+				8 === validateName ||
+					9 === validateName ||
+					13 === validateName ||
+					20 === validateName ||
+					16 === validateName ||
+					32 === validateName ||
+					27 === validateName ||
+					46 === validateName ||
+					116 === validateName ||
+					221 === validateName ||
+					222 === validateName ||
+					192 === validateName ||
+					191 === validateName ||
+					189 === validateName ||
+					(validateName >= 35 && validateName <= 40) ||
+					(validateName >= 65 && validateName <= 90) ||
+					(event.preventDefault(), weirdcharerror());
 			}
 		});
 }

@@ -99,11 +99,13 @@ I have used for as a prototyping tool. Figma is very intuitive and easy to use. 
 
 ### 5.1. Validating
 
-- The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the project to ensure there were no syntax errors in the project.
+- The W3C Markup Validator, W3C CSS Validator and Codeac Services were used to validate the project to ensure there were no syntax errors in the project.
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/htmlvalidator.jpg)
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSSvalidator.jpg)
+
+- [Codeac](https://app.codeac.io/login) - [Results](https://app.codeac.io/github/fdasabino/Portfolio-Project)
 
 ### 5.2. Different Browsers
 
@@ -169,7 +171,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### 8.2. Code
 
-- Shoutout to EmailJS for making possible to send messages directly from the page.
+- Thanks to EmailJS for making possible to send messages directly from the page to Email.
+
+- Thanks to Codeac for the amazing tools that helped me to get the code error free.
 
 ### 8.3. Media
 

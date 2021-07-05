@@ -145,31 +145,29 @@ global Swal
 	});
 
 	// no number input for name field
-	document
-		.getElementById("username")
-		.addEventListener("keydown", function (event) {
-			if (event.ctrlKey || event.altKey);
-			else {
-				var validateName = event.keyCode;
-				8 === validateName ||
-					9 === validateName ||
-					13 === validateName ||
-					20 === validateName ||
-					16 === validateName ||
-					32 === validateName ||
-					27 === validateName ||
-					46 === validateName ||
-					116 === validateName ||
-					221 === validateName ||
-					222 === validateName ||
-					192 === validateName ||
-					191 === validateName ||
-					189 === validateName ||
-					(validateName >= 35 && validateName <= 40) ||
-					(validateName >= 65 && validateName <= 90) ||
-					(event.preventDefault(), weirdcharerror());
-			}
-		});
+	document.getElementById("username").addEventListener("keydown", (event) => {
+		if (event.ctrlKey || event.altKey);
+		else {
+			const validateName = event.keyCode;
+			8 === validateName ||
+				9 === validateName ||
+				13 === validateName ||
+				20 === validateName ||
+				16 === validateName ||
+				32 === validateName ||
+				27 === validateName ||
+				46 === validateName ||
+				116 === validateName ||
+				221 === validateName ||
+				222 === validateName ||
+				192 === validateName ||
+				191 === validateName ||
+				189 === validateName ||
+				(validateName >= 35 && validateName <= 40) ||
+				(validateName >= 65 && validateName <= 90) ||
+				(event.preventDefault(), weirdcharerror());
+		}
+	});
 }
 
 validate();

@@ -134,28 +134,33 @@ global Swal
 
 	// no number input for name field
 	document.getElementById("username").addEventListener("keydown", (event) => {
+		let checkName = event.keyCode;
 		if (event.altKey) {
 			event.preventDefault();
+		} else if (8 === checkName || 9 === checkName || 13 === checkName) {
+			console.log(checkName);
+			return;
+		} else if (20 === checkName || 16 === checkName || 32 === checkName) {
+			console.log(checkName);
+			return;
+		} else if (27 === checkName || 46 === checkName || 116 === checkName) {
+			console.log(checkName);
+			return;
+		} else if (221 === checkName || 222 === checkName || 192 === checkName) {
+			console.log(checkName);
+			return;
+		} else if (191 === checkName || 189 === checkName) {
+			console.log(checkName);
+			return;
+		} else if (
+			(checkName >= 35 && checkName <= 40) ||
+			(checkName >= 65 && checkName <= 90)
+		) {
+			console.log(checkName);
+			return;
 		} else {
-			const checkName = event.keyCode;
-			// keys allowed in name form
-			8 === checkName ||
-				9 === checkName ||
-				13 === checkName ||
-				20 === checkName ||
-				16 === checkName ||
-				32 === checkName ||
-				27 === checkName ||
-				46 === checkName ||
-				116 === checkName ||
-				221 === checkName ||
-				222 === checkName ||
-				192 === checkName ||
-				191 === checkName ||
-				189 === checkName ||
-				(checkName >= 35 && checkName <= 40) ||
-				(checkName >= 65 && checkName <= 90) ||
-				event.preventDefault();
+			event.preventDefault();
+			return false;
 		}
 	});
 }

@@ -70,18 +70,6 @@ global Swal
 		});
 	}
 
-	function weirdcharerror() {
-		Swal.fire({
-			icon: "info",
-			iconColor: "#D4873D",
-			title: "Only Letters Allowed",
-			text: "No Numbers or Special Characters in this Field",
-			confirmButtonColor: "#D4873D",
-			background: "#111",
-			closeOnClickOutside: true,
-		});
-	}
-
 	function errorname() {
 		Swal.fire({
 			icon: "question",
@@ -146,9 +134,11 @@ global Swal
 
 	// no number input for name field
 	document.getElementById("username").addEventListener("keydown", (event) => {
-		if (event.ctrlKey || event.altKey);
-		else {
+		if (event.altKey) {
+			event.preventDefault();
+		} else {
 			const checkName = event.keyCode;
+			// keys allowed in name form
 			8 === checkName ||
 				9 === checkName ||
 				13 === checkName ||
@@ -165,7 +155,7 @@ global Swal
 				189 === checkName ||
 				(checkName >= 35 && checkName <= 40) ||
 				(checkName >= 65 && checkName <= 90) ||
-				(event.preventDefault(), weirdcharerror());
+				event.preventDefault();
 		}
 	});
 }

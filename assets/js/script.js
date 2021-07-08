@@ -1,5 +1,5 @@
 // sticky nav bar that appears when scrolling page
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
 	let header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
 });
@@ -19,7 +19,7 @@ let openbtn = document.querySelector(".js-open");
 let modalBg = document.getElementById("modal-bg");
 let modalBox = document.getElementById("modal-box");
 
-openbtn.addEventListener("click", function (event) {
+openbtn.addEventListener("click", (event) => {
 	event.preventDefault();
 	modalBg.classList.add("active");
 	modalBox.classList.add("active");
@@ -27,7 +27,7 @@ openbtn.addEventListener("click", function (event) {
 
 let closeBtns = document.querySelectorAll(".js-btn");
 closeBtns.forEach((node) => {
-	node.addEventListener("click", function () {
+	node.addEventListener("click", () => {
 		modalBg.classList.remove("active");
 		modalBox.classList.remove("active");
 	});
@@ -143,7 +143,7 @@ global Swal
 		} else {
 			sendmail(name.value, email.value, msg.value);
 			success();
-			window.setTimeout(function () {
+			window.setTimeout(() => {
 				location.reload();
 			}, 7000);
 		}

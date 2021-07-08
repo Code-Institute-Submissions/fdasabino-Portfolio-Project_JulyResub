@@ -86,7 +86,8 @@
 
 [EasyScrollDots](https://github.com/Superhands89/EasyScrollDots)
 
-- EasyScrollDots was incorporated to facilitate navigation on the page. Allowing user to navigate from where their position might be to a different section of the page.
+- EasyScrollDots was incorporated to facilitate navigation on the page.
+  Allowing user to navigate from where their position might be to a different section of the page on desktop version.
 
 [Google Fonts:](https://fonts.google.com/)
 
@@ -101,7 +102,8 @@
 - GitHub is used to store the projects code after being pushed from VScode.
 
 [Figma](https://figma.com/)
-I have used for as a prototyping tool. Figma is very intuitive and easy to use. The program gives you a great look on how the page will come to look like as well as page connections that demonstrate the way the page should behave.
+I have used for as a prototyping tool. Figma is very intuitive and easy to use.
+The program gives you a great look on how the page will come to look like as well as page connections that demonstrate the way the page should behave.
 
 ## 5. Testing
 
@@ -131,7 +133,10 @@ I have used for as a prototyping tool. Figma is very intuitive and easy to use. 
 
 [Internet Explorer](https://support.microsoft.com/en-us/windows/internet-explorer-downloads-d49e1f0d-571c-9a7b-d97e-be248806ca70)
 
-Some Features presented in the tests above do not run on older browsers. No problems were found on newer versions of the browsers listed above. Refer to the links below for a better overview.
+Some Features presented in the tests above do not run on older browsers.
+No problems were found on newer versions of the browsers listed above.
+
+Refer to the links below for a better overview.
 
 [HTML](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/HTMLcompat.jpg)
 [CSS](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSScompat.jpg)
@@ -200,3 +205,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Removed dots from mobile version, which were appearing on top of the images, giving a not so optimal user experience.
 
 - Adjusted tags of social media icon on HTML file, which was causing the icon to take the entire width of the footer.
+
+- Added feature that prevents users from typing their numbers on the name field, as a form validation.
+
+- Fixed issue with JavaScript code, which was causing messages not to be sent.

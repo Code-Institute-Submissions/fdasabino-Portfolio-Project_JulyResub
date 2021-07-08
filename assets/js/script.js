@@ -1,10 +1,10 @@
-// sticky nav bar
+// sticky nav bar that appears when scrolling page
 window.addEventListener("scroll", function () {
 	let header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-//hamburger menu
+//hamburger menu mobile view
 function toggleMenu() {
 	let menuToggle = document.querySelector(".toggle");
 	let menu = document.querySelector(".menu");
@@ -14,7 +14,7 @@ function toggleMenu() {
 
 toggleMenu;
 
-// modal-box
+// modal-box work section
 let openbtn = document.querySelector(".js-open");
 let modalBg = document.getElementById("modal-bg");
 let modalBox = document.getElementById("modal-box");
@@ -58,6 +58,7 @@ function validate() {
 global Swal
 */
 
+	// error message for empty fields
 	function emptyerror() {
 		Swal.fire({
 			icon: "info",
@@ -70,18 +71,20 @@ global Swal
 		});
 	}
 
+	// error message for name field empty
 	function errorname() {
 		Swal.fire({
 			icon: "question",
 			iconColor: "#D4873D",
-			title: "Have you Filled Your Name Correctly? ",
-			text: "Please fill Name Correctly ",
+			title: "Have you Filled Your Name? ",
+			text: "Please fill Name",
 			confirmButtonColor: "#D4873D",
 			background: "#111",
 			closeOnClickOutside: true,
 		});
 	}
 
+	// error message for invalid key in name field
 	function notValidKey() {
 		Swal.fire({
 			icon: "warning",
@@ -94,6 +97,7 @@ global Swal
 		});
 	}
 
+	// error message for email fields
 	function errormail() {
 		Swal.fire({
 			icon: "question",
@@ -106,6 +110,7 @@ global Swal
 		});
 	}
 
+	// Success message
 	function success() {
 		Swal.fire({
 			icon: "success",

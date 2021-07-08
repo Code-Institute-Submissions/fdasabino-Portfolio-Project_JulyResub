@@ -1,12 +1,12 @@
-# Project Portfolio MLS 2
+# Francisco Sabino - Personal Portfolio
 
 <img src="https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Wire.png">
 
-## Francisco Sabino - Personal Portfolio
-
 ## 1. Project Goals
 
-- This page was designed with the purpose of attracting job opportunities. It is part of my milestone 2 (MLS 2) for my developer course at the Code Institute. The main idea with this page is to make it a hub for my future projects and work, so recruiters and potential employers can easily reach out.
+- This page was designed with the purpose of attracting job opportunities.
+  The main idea with this page is to make it a hub for my future projects and work,
+  so recruiters and potential employers can easily reach out and check out latest updates.
 
 [View the live project here](https://fdasabino.github.io/Portfolio-Project/)
 
@@ -26,18 +26,21 @@
 ### 2.3. First Time Visitor Goals
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the page and navigate to the information needed.
-2. As a First Time Visitor, I want to look for modern UX and a not very home page where an user gets constant feedback of their position on the page.
+2. As a First Time Visitor, I want to look for modern UX and a not very home page where an user gets constant feedback of their position on the page in .
 
 ### 2.4. Returning Visitor Goals
 
 1. As a Returning Visitor, I want to find more information about milestones and development.
 2. As a Returning Visitor, I want to find updated projects section and more information about current developments.
 
+## Features
+
 ## 3. Design
 
 ### 3.1. Colour Scheme and Imagery
 
-- The colours chosen for the page were mainly black and white to bring the depth and drama on the imagery, with a touch of Light vibrant green on links and buttons to bring out the contrast to the eye.
+- The colours chosen for the page were mainly black and white to bring the depth and drama on the imagery,
+  with a touch of Light orange on links and buttons to bring out the contrast to the eye.
 
 ### 3.2. Typography
 
@@ -110,7 +113,7 @@ I have used for as a prototyping tool. Figma is very intuitive and easy to use. 
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSSvalidator.jpg)
 
-- [Codeac](https://app.codeac.io/login) - [Results](https://app.codeac.io/github/fdasabino/Portfolio-Project) //load image here
+- [Codeac](https://app.codeac.io/login) - [Results](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/codeAC_Validator_js.jpg)
 
 ### 5.2. Different Browsers
 
@@ -136,14 +139,14 @@ Some Features presented in the tests above do not run on older browsers. No prob
 ### 5.3. Further Testing
 
 - The Website was tested on Google Chrome, Opera, Microsoft Edge, Mozilla Firefox and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhone11.
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8, iPhone11 & iPad.
 - Friends were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ## 6. Future changes to the page
 
 - Complete the set of Milestones from Code Institute to the milestones section.
 - Add more content to all sections of the landing page.
-- Add some more interactivity to the page, allowing more user input, through light and dark mode etc.
+- Add some more interactivity to the page, incrementing my JS file allowing more user input.
 
 ## 7. Deployment
 
@@ -192,6 +195,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - Updated milestone section.
 
-- Improved menu for mobile version, which takes the entire height of the page.
+- Improved menu for mobile version, which takes the entire height of the page on mobile version only.
 
-- Adjusted targeting of social media icon, which was causing the icon to take the entire width of the footer.
+- Removed dots from mobile version, which were appearing on top of the images, giving a not so optimal user experience.
+
+- Adjusted tags of social media icon on HTML file, which was causing the icon to take the entire width of the footer.

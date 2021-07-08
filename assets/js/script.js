@@ -147,10 +147,7 @@ global Swal
 	// no number input for name field
 	document.getElementById("username").addEventListener("keydown", (event) => {
 		let checkName = event.keyCode;
-		if (event.altKey) {
-			notValidKey();
-			event.preventDefault();
-		} else if (checkName >= 48 && checkName <= 57) {
+		if (checkName >= 48 && checkName <= 57) {
 			notValidKey();
 			event.preventDefault();
 		} else if (checkName >= 96 && checkName <= 105) {

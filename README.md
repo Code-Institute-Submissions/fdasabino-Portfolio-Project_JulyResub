@@ -12,18 +12,23 @@
 
 ## 2. User Experience (UX)
 
-### 2.1. Visitors can
+### 2.1. User Stories
 
-- Submit a form directly from the website's contact form at the bottom of the page. The form is validated using Javascript, and sent using EmailJS. Once that is completed they receive an alert message letting them know their message has been sent sucessfully.
+### 2.2. Visitors can
+
+- Submit a form directly from the website's contact form at the bottom of the page. The form is validated using Javascript, and sent using EmailJS.
+  Once that is completed they receive a success message letting them know their message has been sent successfully.
+
+- Have access to a link that takes them to my CV page.
 
 - Have access to Milestones, future and current projects.
 
-### 2.2. First Time Visitor Goals
+### 2.3. First Time Visitor Goals
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the page and navigate to the information needed.
 2. As a First Time Visitor, I want to look for modern UX and a not very home page where an user gets constant feedback of their position on the page.
 
-### 2.3. Returning Visitor Goals
+### 2.4. Returning Visitor Goals
 
 1. As a Returning Visitor, I want to find more information about milestones and development.
 2. As a Returning Visitor, I want to find updated projects section and more information about current developments.
@@ -105,7 +110,7 @@ I have used for as a prototyping tool. Figma is very intuitive and easy to use. 
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSSvalidator.jpg)
 
-- [Codeac](https://app.codeac.io/login) - [Results](https://app.codeac.io/github/fdasabino/Portfolio-Project)
+- [Codeac](https://app.codeac.io/login) - [Results](https://app.codeac.io/github/fdasabino/Portfolio-Project) //load image here
 
 ### 5.2. Different Browsers
 

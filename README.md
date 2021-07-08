@@ -138,14 +138,23 @@ No problems were found on newer versions of the browsers listed above.
 
 Refer to the links below for a better overview.
 
-[HTML](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/HTMLcompat.jpg)
-[CSS](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSScompat.jpg)
+[HTML5](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/HTMLcompat.jpg)
+[CSS3](https://github.com/fdasabino/Portfolio-Project/blob/master/assets/images/Validator/CSScompat.jpg)
+
+As for the Javascript code used on the project, I have used es6. Refer to the compatibility page provided for more details.
+
+[JavaScript](https://caniuse.com/?search=es6)
 
 ### 5.3. Further Testing
 
 - The Website was tested on Google Chrome, Opera, Microsoft Edge, Mozilla Firefox and Safari browsers.
+
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8, iPhone11 & iPad.
+
 - Friends were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+- Some features such as modals, forms, and navigation were tested, on mobile devices, tablets and larger screens and have not shown any errors.
+  The features have been tested using GitHub Pages to load the pages in different devices.
 
 ## 6. Future changes to the page
 

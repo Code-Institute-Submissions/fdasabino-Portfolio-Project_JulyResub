@@ -89,8 +89,8 @@ global Swal
 		Swal.fire({
 			icon: "warning",
 			iconColor: "#D4873D",
-			title: "Not a Valid Character for Name field ",
-			text: "Use letters to fill out your name",
+			title: "Not a Valid Character for Name Field ",
+			text: "Use Letters to Fill out Your Name",
 			confirmButtonColor: "#D4873D",
 			background: "#111",
 			closeOnClickOutside: true,

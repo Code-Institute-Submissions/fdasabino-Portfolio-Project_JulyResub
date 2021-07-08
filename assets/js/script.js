@@ -82,6 +82,18 @@ global Swal
 		});
 	}
 
+	function notValidKey() {
+		Swal.fire({
+			icon: "warning",
+			iconColor: "#D4873D",
+			title: "Not a Valid Character for Name field ",
+			text: "Use letters to fill out your name",
+			confirmButtonColor: "#D4873D",
+			background: "#111",
+			closeOnClickOutside: true,
+		});
+	}
+
 	function errormail() {
 		Swal.fire({
 			icon: "question",
@@ -136,30 +148,15 @@ global Swal
 	document.getElementById("username").addEventListener("keydown", (event) => {
 		let checkName = event.keyCode;
 		if (event.altKey) {
+			notValidKey();
 			event.preventDefault();
-		} else if (8 === checkName || 9 === checkName || 13 === checkName) {
-			console.log(checkName);
-			return;
-		} else if (20 === checkName || 16 === checkName || 32 === checkName) {
-			console.log(checkName);
-			return;
-		} else if (27 === checkName || 46 === checkName || 116 === checkName) {
-			console.log(checkName);
-			return;
-		} else if (221 === checkName || 222 === checkName || 192 === checkName) {
-			console.log(checkName);
-			return;
-		} else if (191 === checkName || 189 === checkName) {
-			console.log(checkName);
-			return;
-		} else if (
-			(checkName >= 35 && checkName <= 40) ||
-			(checkName >= 65 && checkName <= 90)
-		) {
-			console.log(checkName);
-			return;
+		} else if (checkName >= 48 && checkName <= 57) {
+			notValidKey();
+			event.preventDefault();
+		} else if (checkName >= 96 && checkName <= 105) {
+			notValidKey();
+			event.preventDefault();
 		} else {
-			event.preventDefault();
 			return false;
 		}
 	});

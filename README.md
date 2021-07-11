@@ -16,17 +16,17 @@
 
 ### 2.2. Visitors can
 
-- Submit a form directly from the website's contact form at the bottom of the page. The form is validated using Javascript, and sent using EmailJS.
-  Once that is completed they receive a success message letting them know their message has been sent successfully.
-
 - Have access to a link that takes them to my CV page.
 
 - Have access to Milestones, future and current projects.
 
+- Submit a form directly from the website's contact form at the bottom of the page. The form is validated using Javascript, and sent using EmailJS.
+  Once that is completed they receive a success message letting them know their message has been sent successfully.
+
 ### 2.3. First Time Visitor Goals
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the page and navigate to the information needed.
-2. As a First Time Visitor, I want to look for modern UX and a not very home page where an user gets constant feedback of their position on the page in .
+2. As a First Time Visitor, I want to look for modern UX and a not very home page where an user gets constant feedback of their position on the page in.
 
 ### 2.4. Returning Visitor Goals
 
@@ -102,6 +102,7 @@
 - GitHub is used to store the projects code after being pushed from VScode.
 
 [Figma](https://figma.com/)
+
 I have used for as a prototyping tool. Figma is very intuitive and easy to use.
 The program gives you a great look on how the page will come to look like as well as page connections that demonstrate the way the page should behave.
 
@@ -215,6 +216,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - Adjusted tags of social media icon on HTML file, which was causing the icon to take the entire width of the footer.
 
-- Added feature that prevents users from typing their numbers on the name field, as a form validation.
+- Added feature that prevents users from typing numbers on the name field, as a form validation.
 
-- Fixed issue with JavaScript code, which was causing messages not to be sent.
+- Fixed issue with JavaScript functions, which was causing messages not to be sent.
+
+- Added trim function to validation, to avoid empty spaces being submitted.

@@ -126,17 +126,17 @@ global Swal
 		event.preventDefault();
 
 		//msg validation
-		if (msg.value === "" || msg.value === null) {
+		if (msg.value.trim() === "" || msg.value === null) {
 			emptyerror();
 
 			//name validation
-		} else if (name.value === "" || name.value === null) {
+		} else if (name.value.trim() === "" || name.value === null) {
 			errorname();
 
 			//email validation
 		} else if (
-			email.value === "" ||
-			email.value === null ||
+			email.value.trim() === "" ||
+			email.value.trim() === null ||
 			email.value.indexOf("@") === -1
 		) {
 			errormail();
